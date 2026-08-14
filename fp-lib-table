@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "TE_AMPSEAL_776180-1") (type "KiCad") (uri "${KIPRJMOD}/footprints/TE_AMPSEAL_776180-1.pretty") (options "") (descr "TE Connectivity AMPSEAL 776180-1, 35-pos right-angle PCB header - community footprint via SnapEDA, copied into the project for portability"))
+	(lib (name "TI_RNX0012C_VQFN-HR") (type "KiCad") (uri "${KIPRJMOD}/footprints/TI_RNX0012C_VQFN-HR.pretty") (options "") (descr "TI VQFN-HR-12 (RNX0012C) for LMR33630-Q1, built from TI's own package drawing 4225021/C - see build_u2_footprint.py"))
+)
