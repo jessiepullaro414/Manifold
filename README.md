@@ -30,6 +30,18 @@ is what lets KiCad's own "Add Symbol" browser find `Manifold:*` parts, and is
 what a from-scratch `kicad-cli sch erc` needs to not flag every single part
 as "library not included in configuration".
 
+## Building it
+
+[`build.py`](build.py) runs the whole real pipeline in order — schematic
+generation, PCB placement, autorouting, DRC — the same four scripts
+described in "Routing it" and "How the schematic is built" below, just
+chained together:
+
+```
+python build.py                 # full pipeline
+python build.py --skip-route    # skip the slow FreeRouting pass
+```
+
 ## Checking it
 
 [`run_drc.py`](run_drc.py) runs `kicad-cli pcb drc` against `Manifold.kicad_pcb`
