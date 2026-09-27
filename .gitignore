@@ -16,6 +16,13 @@ fp-info-cache
 # committing a large third-party jar.
 tools/*.jar
 
+# Fab-output artifacts - regenerated on demand via kicad-cli from
+# Manifold.kicad_pcb, not hand-authored source, and they go stale the
+# moment the board changes.
+fab_output/
+Manifold_gerbers.zip
+manifold_fab_check.png
+
 # generic
 .DS_Store
 Thumbs.db
